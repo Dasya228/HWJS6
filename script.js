@@ -21,10 +21,10 @@
 // Описание задачи: Напишите функцию, которая убирает повторяющиеся значения.
 //     Ожидаемый результат: [1, 2, 3, 1, 2] => [1, 2, 3]
 // function myFunction(arr){
-//   return arr.from(el=>el.set(el))
+//  return arr.filter((el,idx,num)=>num.indexOf(el)===idx)
 // }
 // console.log(myFunction([1, 2, 3, 1, 2]))
-
+//
 
 //4.
 // Задача. Даны два массива: ['a', 'b', 'c'] и [1, 2, 3]. Объедините их вместе.
@@ -92,64 +92,65 @@
 
 //11.1 фильтровать по цене. от 40000 до 60000 и год до 2019
 // 2 марка
-const cars = [
-   {
-      make: "Ford",
-      model: "Mustang",
-      year: 1969,
-      color: "red",
-      price: 25000
-   },
-   {
-      make: "Ford",
-      model: "F-150",
-      year: 2017,
-      color: "blue",
-      price: 30000
-   },
-   {
-      make: "Tesla",
-      model: "Model S",
-      year: 2018,
-      color: "black",
-      price: 120000
-   },
-   {
-      make: "Chevrolet",
-      model: "Camaro",
-      year: 1970,
-      color: "orange",
-      price: 60000
-   },
-   {
-      make: "Dodge",
-      model: "Challenger",
-      year: 2019,
-      color: "red",
-      price: 35000
-   },
-   {
-      make: "Chevrolet",
-      model: "Corvette",
-      year: 2019,
-      color: "blue",
-      price: 90000
-   },
-   {
-      make: "Tesla",
-      model: "Model 3",
-      year: 2019,
-      color: "white",
-      price: 40000
-   },
-   {
-      make: "Mercedes",
-      model: "C-Class",
-      year: 2019,
-      color: "black",
-      price: 60000
-   }
-]
-console.log(cars.filter(el=>el.price>=40000&&el.price<=60000 && el.year<=2019&&el.make==='Tesla'))
+// const cars = [
+//    {
+//       make: "Ford",
+//       model: "Mustang",
+//       year: 1969,
+//       color: "red",
+//       price: 25000
+//    },
+//    {
+//       make: "Ford",
+//       model: "F-150",
+//       year: 2017,
+//       color: "blue",
+//       price: 30000
+//    },
+//    {
+//       make: "Tesla",
+//       model: "Model S",
+//       year: 2018,
+//       color: "black",
+//       price: 120000
+//    },
+//    {
+//       make: "Chevrolet",
+//       model: "Camaro",
+//       year: 1970,
+//       color: "orange",
+//       price: 60000
+//    },
+//    {
+//       make: "Dodge",
+//       model: "Challenger",
+//       year: 2019,
+//       color: "red",
+//       price: 35000
+//    },
+//    {
+//       make: "Chevrolet",
+//       model: "Corvette",
+//       year: 2019,
+//       color: "blue",
+//       price: 90000
+//    },
+//    {
+//       make: "Tesla",
+//       model: "Model 3",
+//       year: 2019,
+//       color: "white",
+//       price: 40000
+//    },
+//    {
+//       make: "Mercedes",
+//       model: "C-Class",
+//       year: 2019,
+//       color: "black",
+//       price: 60000
+//    }
+// ]
+// console.log(cars.filter(el=>el.price>=40000&&el.price<=60000 && el.year<=2019&&el.make==='Tesla'))
+//
 
 
